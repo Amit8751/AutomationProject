@@ -25,7 +25,7 @@ public class JsonFileUtil {
     public JsonFileUtil(){
         jsonParser = new JSONParser();
         try {
-            jsonObject = (JSONObject) jsonParser.parse(new FileReader("C:/Demo Project/AutomationWithSeleniumJavaDemo/src/com/resources/Players_Data.json"));
+            jsonObject = (JSONObject) jsonParser.parse(new FileReader("C:/GithubProject/AutomationProject/src/com/resources/Players_Data.json"));
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {
