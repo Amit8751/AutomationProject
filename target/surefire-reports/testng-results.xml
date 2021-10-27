@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testing Google Apps" duration-ms="48659" started-at="2021-10-27T01:45:43 IST" finished-at="2021-10-27T01:46:31 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Regression" duration-ms="48659" started-at="2021-10-27T01:45:43 IST" finished-at="2021-10-27T01:46:31 IST">
+      <class name="com.hm.test.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="setUpClass" is-config="true" duration-ms="1773" started-at="2021-10-27T01:45:43 IST" finished-at="2021-10-27T01:45:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="runScenario" duration-ms="22018" started-at="2021-10-27T01:45:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-27T01:46:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search the Customer details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customer Creation Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="runScenario" duration-ms="16282" started-at="2021-10-27T01:46:06 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-27T01:46:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search the Customer details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customer Creation Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="tearDownClass" is-config="true" duration-ms="8520" started-at="2021-10-27T01:46:23 IST" finished-at="2021-10-27T01:46:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.hm.test.runner.TestRunner -->
+    </test> <!-- Regression -->
+  </suite> <!-- Testing Google Apps -->
+</testng-results>

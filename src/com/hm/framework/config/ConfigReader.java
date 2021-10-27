@@ -1,6 +1,8 @@
 package com.hm.framework.config;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 import com.hm.framework.base.BrowserType;
 
@@ -17,7 +19,7 @@ public class ConfigReader {
         //Create Property Object
         Properties p = new Properties();
         //Load the Property file available in same package
-        p.load(getClass().getResourceAsStream("GlobalConfig.properties"));
+        p.load(getClass().getClassLoader().getResourceAsStream("GlobalConfig_new.properties"));
         //Get AUTConnection String
         Settings.AUT_DB_ConnectionString = p.getProperty("AUT_DB_ConnectionString");
         //Get Reporting String

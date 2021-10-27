@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.441">
+<testcase classname="Customer Creation Feature" name="Search the Customer details" time="21.71">
+<system-out><![CDATA[And I Ensure application is opened successfully.............................passed
+When I click on Bank Manager Login Button...................................passed
+And I click on Customers Button.............................................passed
+Then I should see the search customer text box..............................passed
+When I enter first_name in search field as "ABC"............................passed
+Then Customer details should be visible Successfully........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Creation Feature" name="Search the Customer details 2" time="16.231">
+<system-out><![CDATA[And I Ensure application is opened successfully.............................passed
+When I click on Bank Manager Login Button...................................passed
+And I click on Customers Button.............................................passed
+Then I should see the search customer text box..............................passed
+When I enter first_name in search field as "Harry"..........................passed
+Then Customer details should be visible Successfully........................passed
+]]></system-out>
+</testcase>
+</testsuite>

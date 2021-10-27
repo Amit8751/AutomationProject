@@ -1,5 +1,6 @@
 package com.hm.framework.base;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
 public class Browser {
@@ -24,9 +25,20 @@ public class Browser {
 
     public void closeBrowser(){
 
-        _driver.quit();
+        _driver.close();
     }
 
+    public void acceptAlert(){
+
+       Alert alert = _driver.switchTo().alert();
+       alert.accept();
+    }
+
+    public String getAlertText(){
+
+        Alert alert = _driver.switchTo().alert();
+       return alert.getText();
+    }
 
 
 }

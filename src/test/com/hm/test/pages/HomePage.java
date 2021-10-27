@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class HomePage  extends BasePage {
+public class HomePage extends BasePage {
 
 
     public HomePage() {
@@ -24,64 +24,65 @@ public class HomePage  extends BasePage {
 ////    public WebElement linkBankManagerLogin;
 
     @ByAngularButtonText.FindBy(buttonText = "Bank Manager Login")
-    public WebElement bankManagerLoginButton;
+    private WebElement bankManagerLoginButton;
 
     @ByAngularPartialButtonText.FindBy(partialButtonText = "Customer")
-    public WebElement addCustomerButton;
+    private WebElement addCustomerButton;
 
     @ByAngularButtonText.FindBy(buttonText = "Home")
-    public WebElement homeButton;
+    private WebElement homeButton;
 
     @ByAngularModel.FindBy(model = "fName")
-    public WebElement txtFirstName;
+    private WebElement txtFirstName;
 
     @ByAngularModel.FindBy(model = "lName")
-    public WebElement txtLastName;
+    private WebElement txtLastName;
 
     @ByAngularModel.FindBy(model = "postCd")
-    public WebElement txtPostCode;
+    private WebElement txtPostCode;
 
-    @ByAngularButtonText.FindBy(buttonText = "Add Customer")
-    public WebElement addCustomerButtonBelow;
+    @FindBy(how = How.XPATH, using = "//button[text()='Add Customer']")
+    private WebElement addCustomerButtonBelow;
 
     @ByAngularButtonText.FindBy(buttonText = "Customers")
-    public WebElement customerButton;
+    private WebElement customersButton;
 
     @ByAngularModel.FindBy(model = "searchCustomer")
-    public WebElement txtSearchCust;
+    private WebElement txtSearchCust;
 
     @ByAngularButtonText.FindBy(buttonText = "Delete")
-    public WebElement deleteButton;
+    private WebElement deleteButton;
+
+
 
 
     // @ByAngularBinding.FindBy()
 
-   // @ByAngularModel.FindBy( , )
+    // @ByAngularModel.FindBy( , )
 
-  //  @ByAngularBinding.FindBy()
+    //  @ByAngularBinding.FindBy()
 
 
-
-    public HomePage clickBankManagerLoginButton(){
+    public HomePage clickBankManagerLoginButton() {
 
         bankManagerLoginButton.click();
         return GetInstance(HomePage.class);
     }
 
 
-    public HomePage clickAddCustomerButton(){
+    public HomePage clickAddCustomerButton() {
 
         addCustomerButton.click();
         return GetInstance(HomePage.class);
     }
 
-    public boolean IsHomeButtonPresent(){
+    public boolean IsHomeButtonPresent() {
 
         return homeButton.isDisplayed();
 
     }
 
-    public HomePage enterFistNameAndLastName(String fName , String LName , String postCode){
+    public HomePage enterFistNameAndLastName(String fName, String LName, String postCode) {
 
         txtFirstName.sendKeys(fName);
         txtLastName.sendKeys(LName);
@@ -90,22 +91,38 @@ public class HomePage  extends BasePage {
         return GetInstance(HomePage.class);
     }
 
-    public HomePage clickAddCustButtonBelow(){
+    public HomePage clickAddCustButtonBelow() {
 
         addCustomerButtonBelow.click();
         return GetInstance(HomePage.class);
     }
 
-    public HomePage clickDeleteButton(){
+    public HomePage clickDeleteButton() {
 
         deleteButton.click();
         return GetInstance(HomePage.class);
     }
 
 
-    public HomePage searchCustomer(String name){
+    public HomePage searchCustomer(String name) {
 
         txtSearchCust.sendKeys(name);
         return GetInstance(HomePage.class);
     }
+
+   public boolean IsCustomersButton(){
+        return customersButton.isDisplayed();
+   }
+
+    public HomePage clickCustomersButton() {
+
+        customersButton.click();
+        return GetInstance(HomePage.class);
+    }
+    public boolean IsSearchCustomer(){
+        return customersButton.isEnabled();
+    }
+
+
+
 }

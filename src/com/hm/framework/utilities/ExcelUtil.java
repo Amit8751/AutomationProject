@@ -1,9 +1,8 @@
 package com.hm.framework.utilities;
 
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -11,7 +10,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.*;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class ExcelUtil {
 
@@ -24,16 +26,28 @@ public class ExcelUtil {
     static XSSFSheet wrkSheet;
     static XSSFWorkbook workbook =null;
     static Hashtable dict = new Hashtable();
-    private static List<Map<String,String>> testDataAllRows=null;
-    private static Map<String,String> testData=null;
 
 
     // Create Constructor
-    public ExcelUtil(String ExcelSheetPath) throws IOException {
+    public ExcelUtil(String ExcelSheetPath ) throws IOException {
 
         workbook = new XSSFWorkbook(( new FileInputStream(new File(ExcelSheetPath))));
         wrkSheet = workbook.getSheet("Sheet1");
         ColumnDictionary();
+    }
+
+    //Returns the Number of Sheet present in Workbook
+    public static List<String> getSheetNames(String ExcelSheetPath) throws Exception {
+
+        File file =  new File(ExcelSheetPath);
+
+        try (Workbook book = WorkbookFactory.create(file)) {
+
+            return IntStream.range(0, book.getNumberOfSheets())
+                    .mapToObj(book::getSheetAt)
+                    .map(Sheet::getSheetName)
+                    .collect(Collectors.toList());
+        }
     }
 
     //Returns the Number of Rows
@@ -77,35 +91,9 @@ public class ExcelUtil {
 
         }
     }
-    public static List<Map<String, String>> getTestDataInMap(){
 
-        int lastRowNumber=wrkSheet.getLastRowNum();
 
-        int lastColNumber=wrkSheet.getRow(0).getLastCellNum();
 
-        List list=new ArrayList();
-
-        for(int i=0;i<lastColNumber;i++){
-            Row row=wrkSheet.getRow(0);
-            Cell cell=row.getCell(i);
-            String rowHeader=cell.getStringCellValue().trim();
-            list.add(rowHeader);
-
-        }
-        testDataAllRows=new ArrayList<Map<String, String>>();
-        for(int j=1;j<=lastRowNumber;j++){
-
-            Row row=wrkSheet.getRow(j);
-            testData=new TreeMap<String, String>(String.CASE_INSENSITIVE_ORDER);
-            for(int k=0;k<lastColNumber;k++){
-                Cell cell=row.getCell(k);
-                String colValue=cell.getStringCellValue().trim();
-                testData.put((String) list.get(k),colValue);
-            }
-            testDataAllRows.add(testData);
-        }
-        return testDataAllRows;
-    }
 
 
 }

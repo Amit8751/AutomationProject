@@ -1,0 +1,235 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-26T20:15:45.166Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10808000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hm.test.steps.TestInitialize.Initialize()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Search the Customer details",
+        "description": "",
+        "id": "customer-creation-feature;search-the-customer-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 199000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hm.test.steps.TestInitialize.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I Ensure application is opened successfully",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_ensure_application_is_opened_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2087000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on Bank Manager Login Button",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_click_on_bank_manager_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2114000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Customers Button",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_click_on_customers_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2040000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see the search customer text box",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_should_see_the_search_customer_text_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2145000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter first_name in search field as \"ABC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABC\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.hm.test.steps.CustomerSteps.i_enter_first_name_in_search_field_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2036000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Customer details should be visible Successfully",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.customer_details_should_be_visible_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-26T20:16:06.944Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5334000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hm.test.steps.TestInitialize.Initialize()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Search the Customer details",
+        "description": "",
+        "id": "customer-creation-feature;search-the-customer-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 171000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hm.test.steps.TestInitialize.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I Ensure application is opened successfully",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_ensure_application_is_opened_successfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2129000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on Bank Manager Login Button",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_click_on_bank_manager_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2148000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Customers Button",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_click_on_customers_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2047000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see the search customer text box",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.i_should_see_the_search_customer_text_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2124000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter first_name in search field as \"Harry\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Harry\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.hm.test.steps.CustomerSteps.i_enter_first_name_in_search_field_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2047000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Customer details should be visible Successfully",
+            "match": {
+              "location": "com.hm.test.steps.CustomerSteps.customer_details_should_be_visible_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer Creation Feature",
+    "description": "  This feature is responsible for customer creation in XYZ Bank",
+    "id": "customer-creation-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/com/hm/test/features/Customer.feature",
+    "tags": []
+  }
+]

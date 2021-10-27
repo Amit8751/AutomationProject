@@ -15,6 +15,7 @@ public class DriverContext {
     }
 
     public static void setNgWebDriver(NgWebDriver ngDriver) {
+
         ngWebDriver = ngDriver;
     }
 }
