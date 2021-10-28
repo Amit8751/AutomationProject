@@ -1,33 +1,22 @@
-package com.hm.test.steps;
+package test.com.hm.test.steps;
 
 import com.hm.framework.base.DriverContext;
 import com.hm.framework.base.FrameworkInitialize;
 import com.hm.framework.config.ConfigReader;
 import com.hm.framework.config.Settings;
-import com.hm.framework.utilities.DatabaseUtil;
 import com.hm.framework.utilities.ExcelUtil;
 import com.hm.framework.utilities.Log;
-import com.hm.framework.utilities.LogUtil;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
 public class TestInitialize extends FrameworkInitialize {
 
     private static Logger Log = LogManager.getLogger(Log.class.getName());
 
-    @Before
+   // @Before
     public  void  Initialize()  throws IOException, SQLException {
         Log.info("Log has been Started..");
         ConfigReader.PopulateSettings();
@@ -56,7 +45,7 @@ public class TestInitialize extends FrameworkInitialize {
     }
 
 
-    @After
+   // @After
     public void closeBrowser(){
 
         DriverContext.Browser.closeBrowser();

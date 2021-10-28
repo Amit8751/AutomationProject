@@ -1,4 +1,4 @@
-package com.hm.test.steps;
+package test.com.hm.test.steps;
 
 import com.hm.framework.base.Base;
 import com.hm.framework.base.DriverContext;

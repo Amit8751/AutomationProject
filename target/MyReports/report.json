@@ -3,12 +3,13 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-10-26T20:15:45.166Z",
+        "start_timestamp": "2021-10-27T09:33:35.985Z",
         "before": [
           {
             "result": {
-              "duration": 10808000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat java.util.Properties$LineReader.readLine(Properties.java:434)\r\n\tat java.util.Properties.load0(Properties.java:353)\r\n\tat java.util.Properties.load(Properties.java:341)\r\n\tat com.hm.framework.config.ConfigReader.ReadProperty(ConfigReader.java:22)\r\n\tat com.hm.framework.config.ConfigReader.PopulateSettings(ConfigReader.java:13)\r\n\tat com.hm.test.steps.TestInitialize.Initialize(TestInitialize.java:33)\r\n",
+              "duration": 2098000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.hm.test.steps.TestInitialize.Initialize()"
@@ -22,8 +23,9 @@
         "after": [
           {
             "result": {
-              "duration": 199000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat com.hm.test.steps.TestInitialize.closeBrowser(TestInitialize.java:62)\r\n",
+              "duration": 6000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.hm.test.steps.TestInitialize.closeBrowser()"
@@ -35,8 +37,8 @@
         "steps": [
           {
             "result": {
-              "duration": 121000000,
-              "status": "passed"
+              "duration": 4000000,
+              "status": "skipped"
             },
             "line": 16,
             "name": "I Ensure application is opened successfully",
@@ -47,8 +49,8 @@
           },
           {
             "result": {
-              "duration": 2087000000,
-              "status": "passed"
+              "duration": 9000000,
+              "status": "skipped"
             },
             "line": 17,
             "name": "I click on Bank Manager Login Button",
@@ -59,8 +61,8 @@
           },
           {
             "result": {
-              "duration": 2114000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 18,
             "name": "I click on Customers Button",
@@ -71,8 +73,8 @@
           },
           {
             "result": {
-              "duration": 2040000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 19,
             "name": "I should see the search customer text box",
@@ -83,8 +85,8 @@
           },
           {
             "result": {
-              "duration": 2145000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 20,
             "name": "I enter first_name in search field as \"ABC\"",
@@ -101,8 +103,8 @@
           },
           {
             "result": {
-              "duration": 2036000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 21,
             "name": "Customer details should be visible Successfully",
@@ -114,12 +116,13 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-26T20:16:06.944Z",
+        "start_timestamp": "2021-10-27T09:33:38.366Z",
         "before": [
           {
             "result": {
-              "duration": 5334000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat java.util.Properties$LineReader.readLine(Properties.java:434)\r\n\tat java.util.Properties.load0(Properties.java:353)\r\n\tat java.util.Properties.load(Properties.java:341)\r\n\tat com.hm.framework.config.ConfigReader.ReadProperty(ConfigReader.java:22)\r\n\tat com.hm.framework.config.ConfigReader.PopulateSettings(ConfigReader.java:13)\r\n\tat com.hm.test.steps.TestInitialize.Initialize(TestInitialize.java:33)\r\n",
+              "duration": 8000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.hm.test.steps.TestInitialize.Initialize()"
@@ -133,8 +136,9 @@
         "after": [
           {
             "result": {
-              "duration": 171000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat com.hm.test.steps.TestInitialize.closeBrowser(TestInitialize.java:62)\r\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "match": {
               "location": "com.hm.test.steps.TestInitialize.closeBrowser()"
@@ -146,8 +150,7 @@
         "steps": [
           {
             "result": {
-              "duration": 96000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "I Ensure application is opened successfully",
@@ -158,8 +161,7 @@
           },
           {
             "result": {
-              "duration": 2129000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "I click on Bank Manager Login Button",
@@ -170,8 +172,7 @@
           },
           {
             "result": {
-              "duration": 2148000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "I click on Customers Button",
@@ -182,8 +183,8 @@
           },
           {
             "result": {
-              "duration": 2047000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 19,
             "name": "I should see the search customer text box",
@@ -194,8 +195,7 @@
           },
           {
             "result": {
-              "duration": 2124000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "I enter first_name in search field as \"Harry\"",
@@ -212,8 +212,8 @@
           },
           {
             "result": {
-              "duration": 2047000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 21,
             "name": "Customer details should be visible Successfully",

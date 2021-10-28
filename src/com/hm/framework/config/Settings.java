@@ -12,6 +12,7 @@ public class Settings {
     public static Connection ReportingConnection;
     //For Application backend connection string
     public static String AUT_DB_ConnectionString;
+    public static String DB_ConnectionString;
     public static String ReportingConnectionString;
     //Log Path for framework
     public static String LogPath;
@@ -21,7 +22,9 @@ public class Settings {
     public static String AUT;
     public static BrowserType BrowserType;
     public static String AUT_DB_User;
+    public static String DB_User;
     public static String AUT_DB_Password;
+    public static String DB_Password;
 
 
 
