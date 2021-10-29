@@ -67,7 +67,7 @@ public class DatabaseUtility {
         return  testDataAllRows;
     }
 
-    public static void insertDataInDB() throws SQLException {
+    public static void insertDatainDatabase() throws SQLException {
 
         DatabaseUtility databaseUtil=new DatabaseUtility();
         connection=databaseUtil.getConnection();
@@ -80,10 +80,10 @@ public class DatabaseUtility {
 
             for (Object object : jsonArray) {
                 JSONObject record = ( JSONObject ) object;
-                int id = Integer.parseInt(( String ) record.get("ID"));
+                int id = Integer.parseInt((String) record.get("ID"));;
                 String first_name = ( String ) record.get("First_Name");
                 String last_name = ( String ) record.get("Last_Name");
-                String date = ( String ) record.get("Date_Of_Birth");
+                String date = (String) record.get("Date_Of_Birth");
                 long date_of_birth = Date.valueOf(date).getTime();
                 String place_of_birth = ( String ) record.get("Place_Of_Birth");
                 String country = ( String ) record.get("Country");

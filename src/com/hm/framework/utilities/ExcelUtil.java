@@ -23,8 +23,8 @@ public class ExcelUtil {
     static XSSFSheet wrkSheet;
     static XSSFWorkbook workbook =null;
     static Hashtable dict = new Hashtable();
-    private static List<Map<String,String>> testDataAllRows=null;
-    private static Map<String,String> testData=null;
+    private static List<Map<String, String>> testDataAllRows=null;
+    private static Map<String, String> testData=null;
 
 
     // Create Constructor
@@ -114,7 +114,7 @@ public class ExcelUtil {
             for(int k=0;k<lastColNumber;k++){
                 Cell cell=row.getCell(k);
                 String colValue=cell.getStringCellValue().trim();
-                testData.put((String) list.get(k),colValue);
+                testData.put((String) list.get(k), colValue);
             }
             testDataAllRows.add(testData);
         }

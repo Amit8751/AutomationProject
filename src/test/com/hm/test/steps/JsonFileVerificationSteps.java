@@ -12,6 +12,7 @@ import org.junit.Assert;
 
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class JsonFileVerificationSteps {
 
@@ -46,30 +47,25 @@ public class JsonFileVerificationSteps {
 
     @And("^I insert JSON file data in database$")
     public void i_insert_json_file_data_in_database() throws Throwable {
-        databaseUtility.insertDataInDB();
+        //databaseUtility.insertDataInDB();
 
     }
 
-    @And("I insert JSON file data in excel file")
-    public void iInsertJSONFileDataInExcelFile() throws IOException {
-         ExcelUtil excelUtil=new ExcelUtil(ConfigReader.getProperty("ExcelSheetPath"));
-         excelUtil.setCellData(jsonFileUtil.getJsonDataInMap());
-    }
-
-    @And("I read data from excel")
+    @When("I read data from excel")
     public void iReadDataFromExcel() throws IOException {
         ExcelUtil excelUtil=new ExcelUtil(ConfigReader.getProperty("ExcelSheetPath"));
-        excelUtil.getTestDataInMap();
+        System.out.println(excelUtil.getTestDataInMap());
+        System.out.println("...Excel file data read successfully...");
     }
 
-    @And("I compare JSON file data with excel data")
-    public void iCompareJSONFileDataWithExcelData() {
-        System.out.println("...Verification is in progress...");
+    @And("I compare Excel file data with database data")
+    public void iCompareExcelFileDataWithDatabaseData() {
+        System.out.println("...Comparison of data is in progress...");
     }
 
-    @Then("JSON data and excel data should be matched successfully")
-    public void jsonDataAndExcelDataShouldBeMatchedSuccessfully() throws IOException {
+    @Then("Excel file data and database data should be matched successfully")
+    public void excelFileDataAndDatabaseDataShouldBeMatchedSuccessfully() throws SQLException, IOException {
         ExcelUtil excelUtil=new ExcelUtil(ConfigReader.getProperty("ExcelSheetPath"));
-        Assert.assertEquals(jsonFileUtil.getJsonDataInMap(),excelUtil.getTestDataInMap());
+        Assert.assertEquals(excelUtil.getTestDataInMap(),databaseUtility.getSqlResultInMap());
     }
 }
