@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testing Google Apps" duration-ms="10906" started-at="2021-10-27T17:14:16 IST" finished-at="2021-10-27T17:14:27 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Regression" duration-ms="10906" started-at="2021-10-27T17:14:16 IST" finished-at="2021-10-27T17:14:27 IST">
+      <class name="com.hm.test.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="setUpClass" is-config="true" duration-ms="1927" started-at="2021-10-27T17:14:16 IST" finished-at="2021-10-27T17:14:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="runScenario" duration-ms="2631" started-at="2021-10-27T17:14:18 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-27T17:14:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search the Customer details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customer Creation Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.hm.framework.config.ConfigReader.ReadProperty(ConfigReader.java:22)
+at com.hm.framework.config.ConfigReader.PopulateSettings(ConfigReader.java:13)
+at com.hm.test.steps.TestInitialize.Initialize(TestInitialize.java:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="runScenario" duration-ms="73" started-at="2021-10-27T17:14:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-27T17:14:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search the Customer details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customer Creation Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.hm.framework.config.ConfigReader.ReadProperty(ConfigReader.java:22)
+at com.hm.framework.config.ConfigReader.PopulateSettings(ConfigReader.java:13)
+at com.hm.test.steps.TestInitialize.Initialize(TestInitialize.java:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.hm.test.runner.TestRunner@6b19b79]" name="tearDownClass" is-config="true" duration-ms="6182" started-at="2021-10-27T17:14:21 IST" finished-at="2021-10-27T17:14:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.hm.test.runner.TestRunner -->
+    </test> <!-- Regression -->
+  </suite> <!-- Testing Google Apps -->
+</testng-results>

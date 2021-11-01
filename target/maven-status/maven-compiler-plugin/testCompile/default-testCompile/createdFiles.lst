@@ -1,0 +1,7 @@
+com\hm\test\steps\CustomerSteps.class
+com\hm\test\pages\EmployeeListPage.class
+com\hm\test\pages\LoginPage.class
+com\hm\test\steps\TestInitialize.class
+com\hm\test\pages\HomePage.class
+com\hm\test\runner\TestRunner.class
+com\hm\test\seleniumtest\LoginTest.class

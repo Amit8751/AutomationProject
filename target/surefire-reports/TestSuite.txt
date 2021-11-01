@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 12.438 s <<< FAILURE! - in TestSuite
+com.hm.test.runner.TestRunner.runScenario["Search the Customer details", "Optional[Customer Creation Feature]"](1)  Time elapsed: 2.945 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.hm.test.runner.TestRunner.runScenario["Search the Customer details", "Optional[Customer Creation Feature]"](2)  Time elapsed: 0.336 s  <<< FAILURE!
+java.lang.NullPointerException
+

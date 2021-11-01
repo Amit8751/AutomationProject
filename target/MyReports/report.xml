@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="12.218">
+<testcase classname="Verification of JSON file data and Excel file data with database" name="Verify JSON file data is matching with database" time="6.564">
+<system-out><![CDATA[When I read JSON file.......................................................passed
+And I read data from database...............................................passed
+And I compare JSON file data with database data.............................passed
+Then JSON data and database data should be matched successfully.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of JSON file data and Excel file data with database" name="Verify Excel file data is matching with database" time="5.07">
+<system-out><![CDATA[When I read data from excel.................................................passed
+And I read data from database...............................................passed
+And I compare Excel file data with database data............................passed
+Then Excel file data and database data should be matched successfully.......passed
+]]></system-out>
+</testcase>
+</testsuite>
